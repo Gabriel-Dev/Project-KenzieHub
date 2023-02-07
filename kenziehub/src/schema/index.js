@@ -17,7 +17,7 @@ export const registerSchema = yup.object().shape({
     bio: yup.string().required("Esse campo é obrigatório!"),
 
     contact: yup.string().required("Esse campo é obrigatório!")
-      .matches(/^[0-9]\d{8}$/, "Informe um contato válido"),
+      .matches(/^[0-9]\d{8}$/, "Informe um contato com 9 dígitos"),
 
     course_module: yup.string().required("Esse campo é obrigatório!"),
   });

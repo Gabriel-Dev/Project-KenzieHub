@@ -65,7 +65,7 @@ export function UserProvider({ children }) {
 				navigate("/login");
 			}, 4000);
 		} catch (error) {
-			toast.error("Algo deu errado", {
+			toast.error(error.response.data.message, {
 				toastId: "yes",
 			});
 		}
